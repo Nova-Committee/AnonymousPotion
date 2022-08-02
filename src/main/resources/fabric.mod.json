@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "anonymouspotion",
+  "version": "${version}",
+
+  "name": "Anonymous Potion",
+  "description": "Potions without tooltips to test your (or others') luck\ni hate u phoenixsc and aerdnais",
+  "authors": [
+    "pkstDev",
+    "PhoenixSC for showing me the cursed Reddit post\nfk u",
+    "Aerdnais for posting that on Reddit\nfk u 2"
+  ],
+
+  "license": "MIT",
+  "icon": "assets/anonymouspotion/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "committee.nova.anonymouspotion.AnonymousPotion"
+    ],
+    "preLaunch": [
+      "committee.nova.anonymouspotion.AnonymousPotionPreLaunch"
+    ]
+  },
+  "mixins": [
+    "anonymouspotion.mixins.json"
+  ],
+
+  "accessWidener" : "anonymouspotion.accesswidener",
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
